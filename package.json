@@ -1,0 +1,19 @@
+{
+  "name": "secrets_starting_code",
+  "version": "1.0.0",
+  "description": "Web App that's similar to Whisper app to practice and learn authentification and security",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aaron Badilla",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.11",
+    "mongoose-encryption": "^2.0.2"
+  }
+}
