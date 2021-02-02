@@ -1,19 +1,14 @@
 <%- include('partials/header') %>
 
-<div class="background-clearer">
-
-</div>
+<div class="background-clearer"></div>
 
 <div class="container login-platform">
   <h1>Login</h1>
   <hr>
-
   <div class="row">
     <div class="col-sm-12">
       <div class="card">
         <div class="card-body">
-
-          <!-- Makes POST request to /login route -->
           <form action="/login" method="POST">
             <div class="form-group">
               <label for="username">Username</label>
@@ -25,14 +20,12 @@
             </div>
             <button type="submit" class="btn btn-dark">Login</button>
           </form>
-
         </div>
       </div>
     </div>
+  </div>
 
-    </div>
-    <div class="row top-buffer">
-
+  <div class="row top-buffer">
     <div class="col-sm-12">
       <div class="card">
         <div class="card-body">
@@ -49,9 +42,8 @@
         </div>
       </div>
     </div>
-
-</div>
   </div>
+</div>
 </div>
 
 <%- include('partials/footer') %>

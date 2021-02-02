@@ -3,21 +3,19 @@
 
 <div class="submit-platform container">
   <h1>Share</h1>
-
   <p class="open-sans">Don't worry, your secret is safe with us.</p>
-<hr>
-<div class="top-buffer card">
-  <div class="card-body">
-    <form action="/submit" method="POST">
+  <hr>
+  <div class="top-buffer card">
+    <div class="card-body">
+      <form action="/submit" method="POST">
 
-      <div class="form-group">
-        <input type="text" class="form-control text-center input-lg" name="secret" placeholder="What's your secret?">
-      </div>
-      <a class="btn btn-light" href="/secrets" role="button">Maybe later</a>
-      <button type="submit" class="btn btn-dark">Share</button>
-    </form>
+        <div class="form-group">
+          <input type="text" class="form-control text-center input-lg" name="secret" placeholder="What's your secret?">
+        </div>
+        <a class="btn btn-light" href="/secrets" role="button">Maybe later</a>
+        <button type="submit" class="btn btn-dark">Share</button>
+      </form>
+    </div>
   </div>
 </div>
-
-  </div>
 <%- include('partials/footer') %>

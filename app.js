@@ -39,15 +39,16 @@ mongoose.set('useCreateIndex', true);
 
 const secretSchema = new mongoose.Schema({
   secret: []
-}
-);
+});
 
 const userSchema = new mongoose.Schema({
   username: String,
   password: String,
   googleId: String,
   facebookId: String,
-  secrets: [{secret:String}]
+  secrets: [{
+    secret: String
+  }]
 });
 
 
@@ -183,7 +184,9 @@ app.post('/submit', function(req, res) {
       console.log(err);
     } else {
       if (foundUser) {
-        foundUser.secrets.push({secret:userSecret});
+        foundUser.secrets.push({
+          secret: userSecret
+        });
         foundUser.save(function() {
           res.redirect('/secrets')
         });
